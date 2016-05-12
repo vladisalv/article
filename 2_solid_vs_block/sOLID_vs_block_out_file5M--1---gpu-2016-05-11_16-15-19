@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------
+An MPI process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your MPI job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.  
+
+The process that invoked fork was:
+
+  Local host:          node6-155-16 (PID 10544)
+  MPI_COMM_WORLD rank: 0
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//file5M --repeats-analysis-save test/output//sOLID_vs_block_ana_file5M--1---gpu-2016-05-11_16-15-19 --gpu --use-matrix --limit-memory 100000000 
+Number proc = 1
+Input file1 = test/input//file5M
+Input file2 = (null)
+GPU version
+USE MATRIX
+GC GA
+
+init...  3.65
+load sequence...  3.67
+profiling done...  3.84
+decompose done... 12.36
+compare done... gomology = 28.66
+analyze repeats done... save repeats... 32.97
+Total time = 32.973738
+init.      Time =  3.65. Clear time =  3.65. This is 11.1% of time
+sequence.  Time =  3.67. Clear time =  0.02. This is 0.1% of time
+profile.   Time =  3.84. Clear time =  0.17. This is 0.5% of time
+decompose. Time = 12.36. Clear time =  8.52. This is 25.8% of time
+gomology.  Time = 28.66. Clear time = 16.30. This is 49.4% of time
+analyze.   Time = 32.97. Clear time =  4.32. This is 13.1% of time

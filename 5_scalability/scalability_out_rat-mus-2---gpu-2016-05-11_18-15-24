@@ -1,0 +1,50 @@
+--------------------------------------------------------------------------
+An MPI process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your MPI job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.  
+
+The process that invoked fork was:
+
+  Local host:          node6-173-07 (PID 3131)
+  MPI_COMM_WORLD rank: 0
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+You use next command: test/../src/mpisbars2x1 --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//rat -F test/input//mus --repeats-analysis-save test/output//mpiXgpu_ana_rat-mus-2---gpu-2016-05-11_18-15-24 --gpu --limit-memory 100000000 
+Number proc = 2
+Input file1 = test/input//rat
+Input file2 = test/input//mus
+GPU version
+BLOCK METHOD. Use block 100000000 byte
+GC GA
+
+init...  3.65
+load sequence...  3.91
+[node6-173-07:03130] 1 more process has sent help message help-mpi-runtime.txt / mpi_init:warn-fork
+[node6-173-07:03130] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+profiling done...  8.97
+decompose done... 462.98
+gomology = 462.98
+1: wait_time    = 0.154526
+compare_time = 2660.333696
+analyze time = 2083.178704
+merge_time   = 0.079866
+0: wait_time    = 0.148435
+1: wait_time    = 0.149590
+compare_time = 2662.231690
+analyze time = 2082.024335
+merge_time   = 0.079072
+0: wait_time    = 0.153970
+analyze repeats done... save repeats... 10337.86
+Total time = 10337.863888
+init.      Time =  3.65. Clear time =  3.65. This is 0.0% of time
+sequence.  Time =  3.91. Clear time =  0.26. This is 0.0% of time
+profile.   Time =  8.97. Clear time =  5.05. This is 0.0% of time
+decompose. Time = 462.98. Clear time = 454.02. This is 4.4% of time
+gomology.  Time = 462.98. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 10337.86. Clear time = 9874.88. This is 95.5% of time

@@ -1,0 +1,29 @@
+You use next command: ./../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f ./input//rat -F ./input//mus --repeats-analysis-save ./output//block_size_ana_rat-mus-1---gpu-2016-05-07_19-12-57 --gpu --limit-memory 1000000 
+Number proc = 1
+Input file1 = ./input//rat
+Input file2 = ./input//mus
+GPU version
+BLOCK METHOD. Use block 1000000 byte
+GC GA
+
+init...  0.13
+load sequence...  0.46
+profiling done... 10.61
+decompose done... 460.68
+gomology = 460.68
+compare_time = 8591.804311
+analyze time = 4926.077452
+merge_time   = 3.853189
+0: wait_time    = 0.000063
+compare_time = 8590.046740
+analyze time = 4926.823330
+merge_time   = 5.028723
+0: wait_time    = 0.001492
+analyze repeats done... save repeats... 27872.54
+Total time = 27872.535409
+init.      Time =  0.13. Clear time =  0.13. This is 0.0% of time
+sequence.  Time =  0.46. Clear time =  0.33. This is 0.0% of time
+profile.   Time = 10.61. Clear time = 10.15. This is 0.0% of time
+decompose. Time = 460.68. Clear time = 450.07. This is 1.6% of time
+gomology.  Time = 460.68. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 27872.54. Clear time = 27411.86. This is 98.3% of time

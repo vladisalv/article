@@ -1,0 +1,110 @@
+--------------------------------------------------------------------------
+An MPI process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your MPI job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.  
+
+The process that invoked fork was:
+
+  Local host:          node6-158-16 (PID 9808)
+  MPI_COMM_WORLD rank: 0
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//rat -F test/input//mus --repeats-analysis-save test/output//scalability_ana_rat-mus-32---gpu-2016-05-12_11-28-14 --gpu --limit-memory 100000000 
+Number proc = 32
+Input file1 = test/input//rat
+Input file2 = test/input//mus
+GPU version
+BLOCK METHOD. Use block 100000000 byte
+GC GA
+
+init...  0.60
+load sequence...  0.92
+profiling done...  1.32
+[node6-158-16:09796] 31 more processes have sent help message help-mpi-runtime.txt / mpi_init:warn-fork
+[node6-158-16:09796] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+decompose done... 64.80
+gomology = 64.80
+compare_time = 280.218143
+analyze time = 130.223667
+merge_time   = 0.008685
+0: wait_time    = 24.896771
+1: wait_time    = 46.035690
+2: wait_time    = 22.802723
+3: wait_time    = 14.242270
+4: wait_time    = 46.804776
+5: wait_time    = 49.587951
+6: wait_time    = 32.478940
+7: wait_time    = 68.363906
+8: wait_time    = 41.424213
+9: wait_time    = 19.186484
+10: wait_time    = 22.966648
+11: wait_time    = 15.298970
+12: wait_time    = 22.952950
+13: wait_time    = 33.590043
+14: wait_time    = 14.889744
+15: wait_time    = 20.443416
+16: wait_time    = 17.384631
+17: wait_time    = 27.671444
+18: wait_time    = 34.613570
+19: wait_time    = 41.359340
+20: wait_time    = 37.583580
+21: wait_time    = 25.002894
+22: wait_time    = 39.272441
+24: wait_time    = 31.285271
+25: wait_time    = 37.953306
+26: wait_time    = 38.744986
+27: wait_time    = 21.922450
+23: wait_time    = 31.844140
+28: wait_time    = 37.143974
+29: wait_time    = 31.991601
+30: wait_time    = 17.108663
+31: wait_time    = 8.628191
+4: wait_time    = 31.247630
+compare_time = 292.107843
+analyze time = 129.774109
+merge_time   = 0.006925
+0: wait_time    = 22.329920
+1: wait_time    = 25.788637
+2: wait_time    = 16.042945
+3: wait_time    = 21.007865
+6: wait_time    = 30.601350
+5: wait_time    = 30.102488
+7: wait_time    = 28.912565
+24: wait_time    = 38.290057
+25: wait_time    = 19.293172
+26: wait_time    = 22.721984
+20: wait_time    = 32.965511
+27: wait_time    = 28.995970
+21: wait_time    = 15.328090
+28: wait_time    = 22.778271
+22: wait_time    = 4.874066
+29: wait_time    = 28.531865
+23: wait_time    = 1.610607
+8: wait_time    = 23.459542
+16: wait_time    = 39.171318
+31: wait_time    = 20.617486
+9: wait_time    = 22.666905
+17: wait_time    = 14.062597
+30: wait_time    = 49.029829
+10: wait_time    = 36.149790
+18: wait_time    = 39.216484
+11: wait_time    = 11.738934
+19: wait_time    = 11.645226
+12: wait_time    = 93.156151
+13: wait_time    = 51.766921
+14: wait_time    = 53.489783
+15: wait_time    = 27.804762
+analyze repeats done... save repeats... 1110.76
+Total time = 1110.761402
+init.      Time =  0.60. Clear time =  0.60. This is 0.1% of time
+sequence.  Time =  0.92. Clear time =  0.32. This is 0.0% of time
+profile.   Time =  1.32. Clear time =  0.40. This is 0.0% of time
+decompose. Time = 64.80. Clear time = 63.47. This is 5.7% of time
+gomology.  Time = 64.80. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 1110.76. Clear time = 1045.97. This is 94.2% of time

@@ -1,0 +1,157 @@
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//rat -F test/input//mus --repeats-analysis-save test/output//scalability_ana_rat-mus-64--2016-05-12_11-29-27 --limit-memory 1000000 
+Number proc = 64
+Input file1 = test/input//rat
+Input file2 = test/input//mus
+HOST version
+BLOCK METHOD. Use block 1000000 byte
+GC GA
+
+init...  0.07
+load sequence...  0.47
+profiling done...  0.65
+decompose done... 11.18
+gomology = 11.18
+6: wait_time    = 6.643645
+7: wait_time    = 16.353418
+compare_time = 168.983767
+analyze time = 56.445894
+merge_time   = 0.033129
+0: wait_time    = 3.500401
+1: wait_time    = 0.893161
+2: wait_time    = 5.507397
+3: wait_time    = 1.556752
+4: wait_time    = 12.776538
+5: wait_time    = 19.994908
+14: wait_time    = 7.386053
+15: wait_time    = 18.318236
+8: wait_time    = 8.048751
+9: wait_time    = 7.005042
+10: wait_time    = 8.133935
+11: wait_time    = 7.701716
+12: wait_time    = 4.187656
+13: wait_time    = 4.243568
+16: wait_time    = 7.987884
+17: wait_time    = 7.222252
+18: wait_time    = 7.698168
+19: wait_time    = 5.236844
+20: wait_time    = 1.065295
+21: wait_time    = 7.893212
+22: wait_time    = 4.478592
+23: wait_time    = 17.679136
+24: wait_time    = 7.278788
+25: wait_time    = 7.166037
+26: wait_time    = 4.595743
+27: wait_time    = 15.711303
+28: wait_time    = 5.021769
+29: wait_time    = 26.189676
+30: wait_time    = 27.920051
+31: wait_time    = 11.357341
+37: wait_time    = 8.379189
+38: wait_time    = 17.870338
+39: wait_time    = 10.389607
+32: wait_time    = 14.032814
+33: wait_time    = 8.727773
+34: wait_time    = 7.558516
+35: wait_time    = 17.518231
+36: wait_time    = 14.416175
+42: wait_time    = 9.045905
+43: wait_time    = 6.639339
+44: wait_time    = 15.582661
+40: wait_time    = 17.958982
+41: wait_time    = 5.655164
+45: wait_time    = 12.434219
+46: wait_time    = 10.522955
+51: wait_time    = 14.725769
+52: wait_time    = 16.614950
+53: wait_time    = 14.263415
+48: wait_time    = 14.417965
+47: wait_time    = 18.513968
+49: wait_time    = 4.101161
+50: wait_time    = 4.198790
+54: wait_time    = 11.132470
+56: wait_time    = 10.981859
+57: wait_time    = 4.083036
+58: wait_time    = 6.666271
+59: wait_time    = 9.135513
+60: wait_time    = 4.120826
+61: wait_time    = 4.246516
+55: wait_time    = 25.066664
+62: wait_time    = 7.727599
+63: wait_time    = 5.681324
+compare_time = 169.808625
+analyze time = 56.854388
+merge_time   = 0.032134
+0: wait_time    = 3.737357
+1: wait_time    = 15.189972
+2: wait_time    = 22.524744
+3: wait_time    = 11.209796
+4: wait_time    = 3.847685
+7: wait_time    = 21.815287
+6: wait_time    = 3.857506
+5: wait_time    = 19.592286
+15: wait_time    = 7.967077
+8: wait_time    = 3.993184
+9: wait_time    = 17.683213
+21: wait_time    = 24.206167
+10: wait_time    = 17.896765
+22: wait_time    = 24.141396
+11: wait_time    = 17.977700
+23: wait_time    = 7.379962
+12: wait_time    = 4.598720
+16: wait_time    = 14.146782
+17: wait_time    = 14.197176
+14: wait_time    = 10.952568
+13: wait_time    = 7.935593
+18: wait_time    = 11.286866
+19: wait_time    = 24.139081
+31: wait_time    = 24.837666
+20: wait_time    = 20.985297
+24: wait_time    = 0.931037
+36: wait_time    = 4.256716
+25: wait_time    = 3.838112
+39: wait_time    = 23.229034
+26: wait_time    = 6.618150
+32: wait_time    = 7.215386
+45: wait_time    = 21.190684
+27: wait_time    = 9.780698
+33: wait_time    = 4.556928
+46: wait_time    = 21.279923
+28: wait_time    = 6.631105
+34: wait_time    = 2.349182
+47: wait_time    = 4.500146
+29: wait_time    = 4.139359
+35: wait_time    = 1.333984
+44: wait_time    = 20.743115
+30: wait_time    = 4.099937
+37: wait_time    = 4.608946
+40: wait_time    = 18.165953
+38: wait_time    = 4.570933
+42: wait_time    = 14.125949
+43: wait_time    = 14.365356
+41: wait_time    = 14.409296
+60: wait_time    = 4.717175
+61: wait_time    = 6.863621
+62: wait_time    = 10.900090
+63: wait_time    = 10.166340
+56: wait_time    = 14.433477
+57: wait_time    = 9.351454
+58: wait_time    = 5.059833
+59: wait_time    = 7.974327
+49: wait_time    = 15.570137
+51: wait_time    = 23.879041
+52: wait_time    = 15.651822
+50: wait_time    = 8.134164
+54: wait_time    = 3.108608
+55: wait_time    = 17.015661
+53: wait_time    = 24.061766
+48: wait_time    = 10.869355
+analyze repeats done... save repeats... 519.05
+Total time = 519.046118
+init.      Time =  0.07. Clear time =  0.07. This is 0.0% of time
+sequence.  Time =  0.47. Clear time =  0.41. This is 0.1% of time
+profile.   Time =  0.65. Clear time =  0.18. This is 0.0% of time
+decompose. Time = 11.18. Clear time = 10.53. This is 2.0% of time
+gomology.  Time = 11.18. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 519.05. Clear time = 507.86. This is 97.8% of time
+slurmd[node1-005-19]: slurm_receive_msg: Socket timed out on send/recv operation
+slurmd[node1-005-19]: slurm_receive_msg: Socket timed out on send/recv operation

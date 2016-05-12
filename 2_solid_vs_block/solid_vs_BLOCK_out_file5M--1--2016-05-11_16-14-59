@@ -1,0 +1,29 @@
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//file5M --repeats-analysis-save test/output//solid_vs_BLOCK_ana_file5M--1--2016-05-11_16-14-59 --limit-memory 1000000 
+Number proc = 1
+Input file1 = test/input//file5M
+Input file2 = (null)
+HOST version
+BLOCK METHOD. Use block 1000000 byte
+GC GA
+
+init...  0.00
+load sequence...  0.05
+profiling done...  0.20
+decompose done...  9.65
+gomology =  9.65
+compare_time = 12.973557
+analyze time = 3.508164
+merge_time   = 0.001471
+0: wait_time    = 0.000049
+compare_time = 12.939555
+analyze time = 3.507588
+merge_time   = 0.001567
+0: wait_time    = 0.000001
+analyze repeats done... save repeats... 42.94
+Total time = 42.937383
+init.      Time =  0.00. Clear time =  0.00. This is 0.0% of time
+sequence.  Time =  0.05. Clear time =  0.05. This is 0.1% of time
+profile.   Time =  0.20. Clear time =  0.15. This is 0.3% of time
+decompose. Time =  9.65. Clear time =  9.45. This is 22.0% of time
+gomology.  Time =  9.65. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 42.94. Clear time = 33.29. This is 77.5% of time

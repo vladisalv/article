@@ -1,0 +1,302 @@
+--------------------------------------------------------------------------
+An MPI process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your MPI job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.  
+
+The process that invoked fork was:
+
+  Local host:          node6-156-02 (PID 9662)
+  MPI_COMM_WORLD rank: 13
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//rat -F test/input//mus --repeats-analysis-save test/output//scalability_ana_rat-mus-128---gpu-2016-05-12_11-28-43 --gpu --limit-memory 100000000 
+Number proc = 128
+Input file1 = test/input//rat
+Input file2 = test/input//mus
+GPU version
+BLOCK METHOD. Use block 100000000 byte
+GC GA
+
+init...  1.28
+load sequence...  1.88
+profiling done...  1.99
+[node6-156-01:09801] 15 more processes have sent help message help-mpi-runtime.txt / mpi_init:warn-fork
+[node6-156-01:09801] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+decompose done... 19.54
+gomology = 19.54
+compare_time = 72.895022
+analyze time = 32.304331
+merge_time   = 0.003610
+0: wait_time    = 4.606897
+1: wait_time    = 2.925889
+2: wait_time    = 2.267578
+3: wait_time    = 2.121066
+4: wait_time    = 1.564175
+5: wait_time    = 2.214012
+6: wait_time    = 1.001955
+7: wait_time    = 3.176451
+12: wait_time    = 2.368055
+13: wait_time    = 4.474925
+14: wait_time    = 4.935534
+15: wait_time    = 2.921369
+8: wait_time    = 2.515488
+9: wait_time    = 1.402558
+10: wait_time    = 1.545748
+11: wait_time    = 5.094363
+21: wait_time    = 1.847616
+22: wait_time    = 2.356582
+23: wait_time    = 3.561643
+16: wait_time    = 2.474606
+17: wait_time    = 2.112561
+18: wait_time    = 1.624367
+19: wait_time    = 3.843208
+20: wait_time    = 3.379823
+24: wait_time    = 3.612464
+25: wait_time    = 3.694261
+26: wait_time    = 4.622341
+27: wait_time    = 2.638840
+28: wait_time    = 3.175428
+29: wait_time    = 1.066428
+30: wait_time    = 4.034993
+31: wait_time    = 3.241859
+38: wait_time    = 1.640421
+39: wait_time    = 2.630144
+32: wait_time    = 2.208650
+33: wait_time    = 3.418285
+34: wait_time    = 3.535035
+35: wait_time    = 5.295484
+36: wait_time    = 2.562210
+37: wait_time    = 2.082354
+40: wait_time    = 3.109652
+41: wait_time    = 3.072750
+42: wait_time    = 4.428879
+43: wait_time    = 1.608581
+44: wait_time    = 1.538778
+45: wait_time    = 4.846679
+46: wait_time    = 2.591690
+50: wait_time    = 3.003932
+47: wait_time    = 4.103785
+51: wait_time    = 2.926206
+48: wait_time    = 4.468014
+49: wait_time    = 3.116202
+53: wait_time    = 1.659858
+54: wait_time    = 2.968099
+55: wait_time    = 1.829803
+52: wait_time    = 4.279736
+58: wait_time    = 2.110818
+59: wait_time    = 2.219258
+60: wait_time    = 3.092367
+61: wait_time    = 5.785324
+62: wait_time    = 3.188392
+64: wait_time    = 2.376150
+63: wait_time    = 3.224154
+65: wait_time    = 2.163700
+56: wait_time    = 3.175570
+66: wait_time    = 4.481041
+57: wait_time    = 3.034920
+67: wait_time    = 3.042435
+68: wait_time    = 4.110823
+69: wait_time    = 2.644563
+70: wait_time    = 2.846556
+71: wait_time    = 3.127053
+74: wait_time    = 4.488816
+75: wait_time    = 2.293560
+76: wait_time    = 2.835132
+80: wait_time    = 4.687002
+77: wait_time    = 5.060029
+81: wait_time    = 1.573520
+78: wait_time    = 4.548190
+82: wait_time    = 3.897872
+79: wait_time    = 3.773910
+83: wait_time    = 4.088012
+72: wait_time    = 3.239489
+84: wait_time    = 3.151484
+73: wait_time    = 5.205876
+85: wait_time    = 4.913449
+86: wait_time    = 4.393989
+87: wait_time    = 5.004187
+93: wait_time    = 3.808325
+88: wait_time    = 5.689658
+89: wait_time    = 3.252601
+90: wait_time    = 3.043479
+91: wait_time    = 3.053720
+92: wait_time    = 3.983933
+94: wait_time    = 4.363293
+95: wait_time    = 2.839113
+96: wait_time    = 7.383095
+97: wait_time    = 3.315304
+98: wait_time    = 3.841371
+99: wait_time    = 2.439143
+100: wait_time    = 2.978944
+101: wait_time    = 2.059277
+102: wait_time    = 3.410212
+103: wait_time    = 3.443658
+104: wait_time    = 2.760260
+105: wait_time    = 3.005337
+106: wait_time    = 1.941639
+107: wait_time    = 3.483707
+108: wait_time    = 2.679880
+109: wait_time    = 5.319961
+110: wait_time    = 1.201019
+111: wait_time    = 4.065649
+112: wait_time    = 3.958152
+116: wait_time    = 3.377706
+117: wait_time    = 2.552298
+118: wait_time    = 5.357918
+119: wait_time    = 1.979551
+113: wait_time    = 1.881495
+114: wait_time    = 5.042433
+115: wait_time    = 3.641071
+121: wait_time    = 1.472172
+122: wait_time    = 3.937371
+123: wait_time    = 2.268379
+124: wait_time    = 5.079304
+125: wait_time    = 1.826945
+126: wait_time    = 3.819694
+127: wait_time    = 3.039455
+120: wait_time    = 3.939892
+2: wait_time    = 1.917753
+3: wait_time    = 3.954181
+4: wait_time    = 1.617205
+5: wait_time    = 2.857428
+6: wait_time    = 3.186681
+7: wait_time    = 3.028365
+compare_time = 74.013935
+analyze time = 32.496336
+merge_time   = 0.003297
+0: wait_time    = 1.962804
+1: wait_time    = 2.062743
+8: wait_time    = 3.047147
+32: wait_time    = 2.417363
+26: wait_time    = 3.702359
+23: wait_time    = 3.829712
+9: wait_time    = 4.415052
+33: wait_time    = 3.389684
+27: wait_time    = 2.216271
+16: wait_time    = 2.846555
+28: wait_time    = 2.759269
+17: wait_time    = 3.018075
+10: wait_time    = 3.878197
+34: wait_time    = 1.802028
+11: wait_time    = 1.349609
+35: wait_time    = 4.559712
+29: wait_time    = 2.971811
+18: wait_time    = 1.483019
+15: wait_time    = 3.172977
+36: wait_time    = 3.266339
+30: wait_time    = 2.608726
+19: wait_time    = 3.153366
+12: wait_time    = 2.943494
+24: wait_time    = 3.580834
+21: wait_time    = 2.820704
+13: wait_time    = 2.498397
+25: wait_time    = 2.074960
+22: wait_time    = 2.398111
+14: wait_time    = 3.852673
+31: wait_time    = 2.202752
+20: wait_time    = 1.512255
+38: wait_time    = 1.829754
+39: wait_time    = 3.702342
+37: wait_time    = 3.020814
+40: wait_time    = 4.224450
+41: wait_time    = 2.977317
+42: wait_time    = 2.364622
+43: wait_time    = 3.358850
+44: wait_time    = 3.005757
+45: wait_time    = 3.060522
+46: wait_time    = 3.316750
+47: wait_time    = 2.276184
+50: wait_time    = 2.343226
+64: wait_time    = 2.585390
+58: wait_time    = 2.331934
+55: wait_time    = 1.030125
+65: wait_time    = 2.499076
+59: wait_time    = 1.313326
+49: wait_time    = 1.989028
+66: wait_time    = 4.059759
+60: wait_time    = 4.085641
+53: wait_time    = 2.473874
+67: wait_time    = 3.831408
+61: wait_time    = 3.609702
+54: wait_time    = 1.257475
+68: wait_time    = 2.386485
+62: wait_time    = 4.113812
+52: wait_time    = 2.607740
+57: wait_time    = 3.460532
+51: wait_time    = 2.393143
+63: wait_time    = 2.915675
+48: wait_time    = 3.326862
+56: wait_time    = 4.658321
+69: wait_time    = 1.974842
+70: wait_time    = 4.602682
+71: wait_time    = 4.356033
+86: wait_time    = 3.695110
+78: wait_time    = 3.731482
+73: wait_time    = 2.126466
+87: wait_time    = 2.138540
+80: wait_time    = 6.514378
+79: wait_time    = 3.988872
+72: wait_time    = 2.201733
+81: wait_time    = 3.334889
+74: wait_time    = 0.900372
+82: wait_time    = 3.497378
+75: wait_time    = 1.883956
+83: wait_time    = 5.926469
+76: wait_time    = 3.981857
+84: wait_time    = 4.151994
+77: wait_time    = 3.235505
+85: wait_time    = 3.480273
+93: wait_time    = 2.818348
+88: wait_time    = 2.274360
+89: wait_time    = 4.525888
+90: wait_time    = 2.904849
+91: wait_time    = 4.345703
+92: wait_time    = 2.208262
+99: wait_time    = 2.431212
+94: wait_time    = 1.978523
+100: wait_time    = 3.282541
+95: wait_time    = 2.448408
+101: wait_time    = 3.476690
+102: wait_time    = 2.785087
+103: wait_time    = 2.401783
+96: wait_time    = 3.242561
+97: wait_time    = 3.090845
+98: wait_time    = 1.449775
+112: wait_time    = 3.541021
+104: wait_time    = 5.358603
+115: wait_time    = 2.275589
+105: wait_time    = 2.544940
+113: wait_time    = 2.172068
+106: wait_time    = 3.043645
+114: wait_time    = 2.722450
+107: wait_time    = 1.583858
+118: wait_time    = 5.689454
+108: wait_time    = 3.108844
+116: wait_time    = 3.145578
+109: wait_time    = 3.947710
+117: wait_time    = 4.302200
+110: wait_time    = 3.445404
+119: wait_time    = 2.374876
+111: wait_time    = 3.718501
+120: wait_time    = 4.813482
+121: wait_time    = 1.366740
+122: wait_time    = 3.784784
+123: wait_time    = 1.381468
+124: wait_time    = 3.686253
+125: wait_time    = 2.001286
+126: wait_time    = 2.008496
+127: wait_time    = 3.591702
+analyze repeats done... save repeats... 288.39
+Total time = 288.391598
+init.      Time =  1.28. Clear time =  1.28. This is 0.4% of time
+sequence.  Time =  1.88. Clear time =  0.61. This is 0.2% of time
+profile.   Time =  1.99. Clear time =  0.11. This is 0.0% of time
+decompose. Time = 19.54. Clear time = 17.55. This is 6.1% of time
+gomology.  Time = 19.54. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 288.39. Clear time = 268.85. This is 93.2% of time

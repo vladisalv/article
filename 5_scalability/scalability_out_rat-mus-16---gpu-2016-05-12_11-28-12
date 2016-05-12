@@ -1,0 +1,78 @@
+--------------------------------------------------------------------------
+An MPI process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your MPI job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.  
+
+The process that invoked fork was:
+
+  Local host:          node6-156-04 (PID 9359)
+  MPI_COMM_WORLD rank: 15
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//rat -F test/input//mus --repeats-analysis-save test/output//scalability_ana_rat-mus-16---gpu-2016-05-12_11-28-12 --gpu --limit-memory 100000000 
+Number proc = 16
+Input file1 = test/input//rat
+Input file2 = test/input//mus
+GPU version
+BLOCK METHOD. Use block 100000000 byte
+GC GA
+
+init...  0.43
+load sequence...  0.69
+profiling done...  1.48
+[node6-156-03:09299] 15 more processes have sent help message help-mpi-runtime.txt / mpi_init:warn-fork
+[node6-156-03:09299] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+decompose done... 123.91
+gomology = 123.91
+6: wait_time    = 36.675120
+compare_time = 565.928792
+analyze time = 259.216683
+merge_time   = 0.014710
+0: wait_time    = 160.047201
+1: wait_time    = 178.835334
+2: wait_time    = 84.741614
+3: wait_time    = 77.159859
+4: wait_time    = 36.698579
+5: wait_time    = 218.771320
+7: wait_time    = 171.653343
+8: wait_time    = 133.643048
+9: wait_time    = 171.691268
+10: wait_time    = 142.045478
+11: wait_time    = 163.499093
+12: wait_time    = 159.645794
+13: wait_time    = 205.454766
+14: wait_time    = 152.629439
+15: wait_time    = 215.766654
+7: wait_time    = 184.996979
+compare_time = 595.421848
+analyze time = 258.096434
+merge_time   = 0.016693
+0: wait_time    = 133.433442
+1: wait_time    = 63.619607
+2: wait_time    = 155.562460
+3: wait_time    = 165.927137
+4: wait_time    = 171.522538
+6: wait_time    = 108.064713
+5: wait_time    = 169.454137
+8: wait_time    = 97.761176
+9: wait_time    = 195.551179
+10: wait_time    = 24.685784
+11: wait_time    = 236.571727
+12: wait_time    = 98.052692
+13: wait_time    = 142.040266
+14: wait_time    = 86.707993
+15: wait_time    = 205.220357
+analyze repeats done... save repeats... 2313.37
+Total time = 2313.368635
+init.      Time =  0.43. Clear time =  0.43. This is 0.0% of time
+sequence.  Time =  0.69. Clear time =  0.26. This is 0.0% of time
+profile.   Time =  1.48. Clear time =  0.79. This is 0.0% of time
+decompose. Time = 123.91. Clear time = 122.43. This is 5.3% of time
+gomology.  Time = 123.91. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 2313.37. Clear time = 2189.46. This is 94.6% of time

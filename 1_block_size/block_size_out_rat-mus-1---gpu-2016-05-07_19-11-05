@@ -1,0 +1,32 @@
+/bin/sh: BASH_FUNC_module(): line 0: syntax error near unexpected token `)'
+/bin/sh: BASH_FUNC_module(): line 0: `BASH_FUNC_module() () {  eval `/usr/bin/modulecmd bash $*`'
+/bin/sh: error importing function definition for `BASH_FUNC_module'
+You use next command: ./../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f ./input//rat -F ./input//mus --repeats-analysis-save ./output//block_size_ana_rat-mus-1---gpu-2016-05-07_19-11-05 --gpu --limit-memory 25000000 
+Number proc = 1
+Input file1 = ./input//rat
+Input file2 = ./input//mus
+GPU version
+BLOCK METHOD. Use block 25000000 byte
+GC GA
+
+init...  0.13
+load sequence...  1.72
+profiling done... 11.88
+decompose done... 457.81
+gomology = 457.81
+compare_time = 3759.384950
+analyze time = 4895.589436
+merge_time   = 0.816373
+0: wait_time    = 0.000081
+compare_time = 3992.185541
+analyze time = 4927.292940
+merge_time   = 1.415324
+0: wait_time    = 0.000001
+analyze repeats done... save repeats... 19138.05
+Total time = 19138.054538
+init.      Time =  0.13. Clear time =  0.13. This is 0.0% of time
+sequence.  Time =  1.72. Clear time =  1.59. This is 0.0% of time
+profile.   Time = 11.88. Clear time = 10.16. This is 0.1% of time
+decompose. Time = 457.81. Clear time = 445.93. This is 2.3% of time
+gomology.  Time = 457.81. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 19138.05. Clear time = 18680.25. This is 97.6% of time

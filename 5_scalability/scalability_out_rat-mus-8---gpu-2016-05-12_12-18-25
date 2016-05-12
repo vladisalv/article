@@ -1,0 +1,51 @@
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//rat -F test/input//mus --repeats-analysis-save test/output//scalability_ana_rat-mus-8---gpu-2016-05-12_12-18-25 --gpu --limit-memory 100000000 
+Number proc = 8
+Input file1 = test/input//rat
+Input file2 = test/input//mus
+GPU version
+BLOCK METHOD. Use block 100000000 byte
+GC GA
+
+init...  3.68
+load sequence...  3.91
+profiling done...  5.37
+decompose done... 244.51
+gomology = 244.51
+6: wait_time    = 614.880288
+compare_time = 1012.859351
+analyze time = 515.589812
+merge_time   = 0.026882
+0: wait_time    = 379.966644
+1: wait_time    = 964.287900
+2: wait_time    = 580.948763
+3: wait_time    = 145.311859
+4: wait_time    = 254.263822
+5: wait_time    = 149.666458
+7: wait_time    = 682.051416
+2: wait_time    = 400.997877
+3: wait_time    = 301.510470
+4: wait_time    = 436.370916
+6: wait_time    = 284.331607
+5: wait_time    = 518.201037
+7: wait_time    = 632.936140
+compare_time = 1177.844599
+analyze time = 513.515514
+merge_time   = 0.027983
+0: wait_time    = 432.373342
+1: wait_time    = 394.395605
+analyze repeats done... save repeats... 4912.05
+Total time = 4912.054049
+init.      Time =  3.68. Clear time =  3.68. This is 0.1% of time
+sequence.  Time =  3.91. Clear time =  0.23. This is 0.0% of time
+profile.   Time =  5.37. Clear time =  1.46. This is 0.0% of time
+decompose. Time = 244.51. Clear time = 239.14. This is 4.9% of time
+gomology.  Time = 244.51. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 4912.05. Clear time = 4667.55. This is 95.0% of time
+slurmd[node6-165-11]: slurm_receive_msg: Socket timed out on send/recv operation
+slurmd[node6-165-11]: slurm_receive_msg: Socket timed out on send/recv operation
+slurmd[node6-165-11]: slurm_receive_msg: Socket timed out on send/recv operation
+slurmd[node6-165-11]: slurm_receive_msg: Socket timed out on send/recv operation
+slurmd[node6-165-11]: slurm_receive_msg: Socket timed out on send/recv operation
+slurmd[node6-165-11]: slurm_receive_msg: Socket timed out on send/recv operation
+slurmd[node6-165-11]: slurm_receive_msg: Socket timed out on send/recv operation
+slurmd[node6-165-11]: slurm_receive_msg: Socket timed out on send/recv operation
