@@ -1,0 +1,29 @@
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//file5M --repeats-analysis-save test/output//solid_vs_BLOCK_ana_file5M--1---gpu-2016-05-11_16-15-13 --gpu --limit-memory 100000000 
+Number proc = 1
+Input file1 = test/input//file5M
+Input file2 = (null)
+GPU version
+BLOCK METHOD. Use block 100000000 byte
+GC GA
+
+init...  3.59
+load sequence...  3.65
+profiling done...  3.82
+decompose done... 12.21
+gomology = 12.21
+compare_time = 2.828366
+analyze time = 4.064430
+merge_time   = 0.000397
+0: wait_time    = 0.000048
+compare_time = 2.815283
+analyze time = 4.062034
+merge_time   = 0.000353
+0: wait_time    = 0.000001
+analyze repeats done... save repeats... 26.95
+Total time = 26.947779
+init.      Time =  3.59. Clear time =  3.59. This is 13.3% of time
+sequence.  Time =  3.65. Clear time =  0.06. This is 0.2% of time
+profile.   Time =  3.82. Clear time =  0.17. This is 0.6% of time
+decompose. Time = 12.21. Clear time =  8.39. This is 31.1% of time
+gomology.  Time = 12.21. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 26.95. Clear time = 14.74. This is 54.7% of time

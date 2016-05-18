@@ -1,0 +1,59 @@
+You use next command: test/../src/mpisbars --profiling-window 100 --step-profiling 1 --decompose-window 400 --step-decompose 100 --number-coefficient 75 --eps 0.00001 -f test/input//rat -F test/input//mus --repeats-analysis-save test/output//scalability_ana_rat-mus-16--2016-05-13_02-36-47 --limit-memory 1000000 
+Number proc = 16
+Input file1 = test/input//rat
+Input file2 = test/input//mus
+HOST version
+BLOCK METHOD. Use block 1000000 byte
+GC GA
+
+init...  0.04
+load sequence...  0.26
+profiling done...  0.86
+decompose done... 38.72
+gomology = 38.72
+compare_time = 666.590172
+analyze time = 223.494977
+merge_time   = 0.124966
+0: wait_time    = 4.403008
+1: wait_time    = 58.176071
+2: wait_time    = 113.318968
+3: wait_time    = 59.392061
+4: wait_time    = 1.993412
+5: wait_time    = 226.103852
+6: wait_time    = 5.147467
+7: wait_time    = 60.781566
+8: wait_time    = 113.582101
+9: wait_time    = 118.675184
+10: wait_time    = 126.843664
+11: wait_time    = 112.618822
+12: wait_time    = 115.305081
+13: wait_time    = 65.775047
+14: wait_time    = 7.902434
+15: wait_time    = 62.220133
+5: wait_time    = 282.165150
+6: wait_time    = 58.552612
+7: wait_time    = 339.918735
+compare_time = 674.421037
+analyze time = 223.574432
+merge_time   = 0.108908
+0: wait_time    = 338.162541
+1: wait_time    = 56.463796
+2: wait_time    = 282.853376
+3: wait_time    = 4.027033
+4: wait_time    = 280.898621
+8: wait_time    = 62.530337
+9: wait_time    = 114.678157
+10: wait_time    = 220.357715
+11: wait_time    = 223.198615
+12: wait_time    = 165.527500
+13: wait_time    = 115.365011
+14: wait_time    = 117.260876
+15: wait_time    = 167.672647
+analyze repeats done... save repeats... 2415.47
+Total time = 2415.474675
+init.      Time =  0.04. Clear time =  0.04. This is 0.0% of time
+sequence.  Time =  0.26. Clear time =  0.23. This is 0.0% of time
+profile.   Time =  0.86. Clear time =  0.60. This is 0.0% of time
+decompose. Time = 38.72. Clear time = 37.86. This is 1.6% of time
+gomology.  Time = 38.72. Clear time =  0.00. This is 0.0% of time
+analyze.   Time = 2415.47. Clear time = 2376.76. This is 98.4% of time

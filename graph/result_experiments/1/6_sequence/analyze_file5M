@@ -1,0 +1,47 @@
+nCoef = 75
+Read file(s)...
+nStepWin2 = 100
+Variable for GC:
+Max mean of profile: 76
+Min mean of profile: 29
+Variable: 0.470
+Raznica = 47
+Max mean of profile: 78
+Min mean of profile: 22
+Variable: 0.560
+Raznica = 56
+Variable for GA:
+Max mean of profile: 76
+Min mean of profile: 29
+Variable: 0.470
+Raznica = 47
+Max mean of profile: 78
+Min mean of profile: 22
+Variable: 0.560
+Raznica = 56
+nSteps1   = 4999901
+nStepBmpWidth = 49996
+nSteps2   = 4999901
+nStepBmpHeight = 49996
+Matrix of vectors...
+Vectors comparison...
+Bitmask: 1
+ad 1000000 1600000 100099
+ad 1000000 1500000 200099
+ad 1000000 1400000 300099
+ad 1000000 1300000 400099
+ad 1000000 1200000 500099
+ad 1000000 1100000 600099
+ad 1600000 1000000 100099
+ad 1500000 1000000 200099
+ad 1400000 1000000 300099
+ad 1300000 1000000 400099
+ad 1200000 1000000 500099
+ad 1100000 1000000 600099
+ad 0 0 5000099
+
+Reading files:	0.560
+Dec/legn/Est:	2.294
+Write bmp:	0.001
+Find reps:	81.683
+Full time:	84.568
