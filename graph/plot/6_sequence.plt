@@ -7,7 +7,7 @@ set title "Сравнение с последовательным вариант
 set ylabel "время (сек)"
 set y2label "время (сек)" rotate by -90
 set xlabel "сравниваемые последовательности."
-set key center top autotitle columnheader # Вынести легенду за график
+set key center top autotitle columnheader
 
 set xtics("искуственная" 0, "крыса с мышью" 3)
 set ytics nomirror
