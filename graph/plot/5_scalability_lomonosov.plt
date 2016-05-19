@@ -6,10 +6,10 @@ set title "Масштабируемость программы.\n \
 {/*0.7 Конфигурация 4 MPI x 1 GPU. Lomonosov.}"
 set xlabel "количество процессов"
 set ylabel "время (сек)"
+set key right center outside autotitle columnheader
 
-set xtics ("1" 0, "2" 1, "4" 2, "8" 3, "16" 4, "32" 5, "64" 6, "128" 7, "256" 8, "512" 9, "1024" 10)
 set logscale y
-set key right center outside
+set xtics font ", 10"
 
-plot data_dir.'/5_scalability_lomonosov.data' every ::0::8 u 1:2 w linespoints lw 2 pt 7 lt rgb 'royalblue' title "GPU",\
-     data_dir.'/5_scalability_lomonosov.data' u 1:3 w linespoints lw 2 pt 7 lt rgb 'dark-red'  title "HOST"
+plot data_dir.'/5_scalability_lomonosov.data' every ::0::8 u 2:xtic(1) w linespoints lw 2 pt 7 lt rgb 'royalblue',\
+     data_dir.'/5_scalability_lomonosov.data' u 3:xtic(1) w linespoints lw 2 pt 7 lt rgb 'dark-red'

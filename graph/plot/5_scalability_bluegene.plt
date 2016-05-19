@@ -2,7 +2,7 @@ set terminal png font "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf" 14
 set output image_dir.'/5_scalability_bluegene.png'
 
 set title "Масштабируемость программы.\n \
-{/*0.7 Сравнение последовательности мыши и крысы. Блочная программа. Blue Gene/P}
+{/*0.7 Сравнение последовательности мыши и крысы. Блочная программа. Blue Gene/P.}
 set xlabel "количество процессов"
 set ylabel "время (сек)"
 

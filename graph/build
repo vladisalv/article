@@ -21,8 +21,6 @@ function plot {
     gnuplot -e "image_dir='$IMAGE_DIR'; data_dir='$DATA_DIR'" $PLOT_DIR/5_scalability_lomonosov.plt
     gnuplot -e "image_dir='$IMAGE_DIR'; data_dir='$DATA_DIR'" $PLOT_DIR/5_scalability_bluegene.plt
     gnuplot -e "image_dir='$IMAGE_DIR'; data_dir='$DATA_DIR'" $PLOT_DIR/6_sequence.plt
-    #gnuplot $PLOT/gpuA.plt
-    #gnuplot $PLOT/masAa.plt
 }
 
 make_data
